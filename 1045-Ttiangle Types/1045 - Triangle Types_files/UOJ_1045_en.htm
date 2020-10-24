@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html><head>
+            <title>URI 1045 - Triangle Types</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br">
+            <meta name="description" content="URI Online Judge - Problem 1045 - Triangle Types">
+
+            <link rel="stylesheet" type="text/css" href="UOJ_1045_en_data/default.css">
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1045</span>
+                <h1>Triangle Types</h1>
+                <div><p>
+				Adapted by Neilor Tonin, URI <script pagespeed_no_defer="">//<![CDATA[
+(function(){var g=this,h=function(b,d){var a=b.split("."),c=g;a[0]in c||!c.execScript||c.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)a.length||void 0===d?c[e]?c=c[e]:c=c[e]={}:c[e]=d};var l=function(b){var d=b.length;if(0<d){for(var a=Array(d),c=0;c<d;c++)a[c]=b[c];return a}return[]};var m=function(b){var d=window;if(d.addEventListener)d.addEventListener("load",b,!1);else if(d.attachEvent)d.attachEvent("onload",b);else{var a=d.onload;d.onload=function(){b.call(this);a&&a.call(this)}}};var n,p=function(b,d,a,c,e){this.f=b;this.h=d;this.i=a;this.c=e;this.e={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};this.g=c;this.b={};this.a=[];this.d={}},q=function(b,d){var a,c,e=d.getAttribute("pagespeed_url_hash");if(a=e&&!(e in b.d))if(0>=d.offsetWidth&&0>=d.offsetHeight)a=!1;else{c=d.getBoundingClientRect();var f=document.body;a=c.top+("pageYOffset"in window?window.pageYOffset:(document.documentElement||f.parentNode||f).scrollTop);c=c.left+("pageXOffset"in window?window.pageXOffset:(document.documentElement||f.parentNode||f).scrollLeft);f=a.toString()+","+c;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.e.height&&c<=b.e.width)}a&&(b.a.push(e),b.d[e]=!0)};p.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&q(this,b)};h("pagespeed.CriticalImages.checkImageForCriticality",function(b){n.checkImageForCriticality(b)});h("pagespeed.CriticalImages.checkCriticalImages",function(){r(n)});var r=function(b){b.b={};for(var d=["IMG","INPUT"],a=[],c=0;c<d.length;++c)a=a.concat(l(document.getElementsByTagName(d[c])));if(0!=a.length&&a[0].getBoundingClientRect){for(c=0;d=a[c];++c)q(b,d);a="oh="+b.i;b.c&&(a+="&n="+b.c);if(d=0!=b.a.length)for(a+="&ci="+encodeURIComponent(b.a[0]),c=1;c<b.a.length;++c){var e=","+encodeURIComponent(b.a[c]);131072>=a.length+e.length&&(a+=e)}b.g&&(e="&rd="+encodeURIComponent(JSON.stringify(s())),131072>=a.length+e.length&&(a+=e),d=!0);t=a;if(d){c=b.f;b=b.h;var f;if(window.XMLHttpRequest)f=new XMLHttpRequest;else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(k){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(u){}}f&&(f.open("POST",c+(-1==c.indexOf("?")?"?":"&")+"url="+encodeURIComponent(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}},s=function(){var b={},d=document.getElementsByTagName("IMG");if(0==d.length)return{};var a=d[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var c=0;a=d[c];++c){var e=a.getAttribute("pagespeed_url_hash");e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].k&&a.height>=b[e].j)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b},t="";h("pagespeed.CriticalImages.getBeaconData",function(){return t});h("pagespeed.CriticalImages.Run",function(b,d,a,c,e,f){var k=new p(b,d,a,e,f);n=k;c&&m(function(){window.setTimeout(function(){r(k)},0)})});})();pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','https://www.urionlinejudge.com.br/repository/UOJ_1045_en.html','l8PuqRhht8',true,false,'QLipxXIFj9Q');
+//]]></script><img alt="" src="UOJ_1045_en_data/br.gif" style="width: 16px; height: 11px; " pagespeed_url_hash="1424624961" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> Brazil</p>
+</div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Read 3 double numbers (A, B and C) representing the sides of a triangle
+ and arrange them in decreasing order, so that the side A is the biggest
+ of the three sides. Next, determine the type of triangle that they can 
+make, based on the following cases always writing an appropriate 
+message:<br>
+	</p>
+<ul>
+	<li>
+		if A ≥ B + C, write the message: <strong>NAO FORMA TRIANGULO</strong></li>
+	<li>
+		if A<sup>2</sup> = B<sup>2</sup> + C<sup>2</sup>, write the message: <strong>TRIANGULO RETANGULO</strong></li>
+	<li>
+		if A<sup>2</sup> &gt; B<sup>2</sup> + C<sup>2</sup>, write the message: <strong>TRIANGULO OBTUSANGULO</strong></li>
+	<li>
+		if A<sup>2</sup> &lt; B<sup>2</sup> + C<sup>2</sup>, write the message: <strong>TRIANGULO ACUTANGULO</strong></li>
+	<li>
+		if the three sides are the same size, write the message: <strong>TRIANGULO EQUILATERO</strong></li>
+	<li>
+		if only two sides are the same and the third one is different, write the message: <strong>TRIANGULO ISOSCELES</strong></li>
+</ul>
+
+                </div>
+
+                <h2>Input</h2>
+
+                <div class="input">
+                    <p>
+	The input contains three double numbers, A (0 &lt; A) , B (0 &lt; B) and C (0 &lt; C).</p>
+
+                </div>
+
+                <h2>Output</h2>
+
+                <div class="output">
+                    <p>
+	Print all the classifications of the triangle presented in the input.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Sample Inputs</td>
+                            <td>Sample Outputs</td>
+                        </tr>
+                    </thead>
+                     <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+								7.0 5.0 7.0</p>
+                            </td>
+                            <td>
+                                <p>
+								TRIANGULO ACUTANGULO<br>
+								TRIANGULO ISOSCELES</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                     
+				 <table>
+                    
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+								6.0 6.0 10.0</p>
+                            </td>
+                            <td>
+                                <p>
+								TRIANGULO OBTUSANGULO<br>
+								TRIANGULO ISOSCELES</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+				 <table>
+                    
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+								6.0 6.0 6.0</p>
+                            </td>
+                            <td>
+                                <p>
+								TRIANGULO ACUTANGULO<br>
+								TRIANGULO EQUILATERO</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+				<table>
+                   
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+								5.0 7.0 2.0</p>
+                            </td>
+                            <td>
+                                <p>
+								NAO FORMA TRIANGULO</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+				 <table>
+                   
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+								6.0 8.0 10.0</p>
+                            </td>
+                            <td>
+                                <p>
+								TRIANGULO RETANGULO</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+    
+</body></html>

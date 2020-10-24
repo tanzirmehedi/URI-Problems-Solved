@@ -1,0 +1,4812 @@
+@charset "utf-8";
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+blockquote,q {
+    quotes: none;
+}
+
+blockquote:after,blockquote:before,q:after,q:before {
+    content: '';
+    content: none;
+}
+
+body {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/4.0/background.311214.gif) top center #fbfaf7;
+    color: #454545;
+    font-family: 'Trebuchet MS',Helvetica,Jamrul,sans-serif;
+    font-size: 12px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+a {
+    color: #454545;
+    outline: 0;
+    text-decoration: none;
+}
+
+input,select,textarea {
+    outline: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 4px;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    background: #fff;
+    border-radius: 0 5px 5px 0;
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    border-left: #d4d4d4 solid 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(185,185,185,.8);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(185,185,185,.4);
+}
+
+@font-face {
+    font-family:BryantRegular;src:url(https://urionlinejudge.r.worldssl.net/judge/fonts/4.1/BryantMedium.woff2) format('woff2'),url(https://urionlinejudge.r.worldssl.net/judge/fonts/4.1/BryantMedium.woff) format('woff'),url(https://urionlinejudge.r.worldssl.net/judge/fonts/4.1/BryantMedium.ttf) format('ttf'),url(https://urionlinejudge.r.worldssl.net/judge/fonts/4.1/BryantMedium.eot) format('eot');font-weight:400;font-style:normal;
+}
+
+@font-face {
+    font-family:BebasNeueRegular;src:url(https://urionlinejudge.r.worldssl.net/judge/fonts/3.1/BebasNeue.eot);src:url(https://urionlinejudge.r.worldssl.net/judge/fonts/3.1/BebasNeue.eot?#iefix) format('embedded-opentype'),url(https://urionlinejudge.r.worldssl.net/judge/fonts/3.1/BebasNeue.woff) format('woff'),url(https://urionlinejudge.r.worldssl.net/judge/fonts/3.1/BebasNeue.ttf) format('truetype'),url(https://urionlinejudge.r.worldssl.net/judge/fonts/3.1/BebasNeue.svg#BebasNeueRegular) format('svg');font-weight:400;font-style:normal;
+}
+
+@font-face {
+    font-family:SketchRockwellRegular;src:url(https://urionlinejudge.r.worldssl.net/judge/fonts/4.1/SketchRockwell.woff2) format('woff2'),url(https://urionlinejudge.r.worldssl.net/judge/fonts/4.1/SketchRockwell.woff) format('woff'),url(https://urionlinejudge.r.worldssl.net/judge/fonts/4.1/SketchRockwell.ttf) format('ttf'),url(https://urionlinejudge.r.worldssl.net/judge/fonts/4.1/SketchRockwell.eot) format('eot');font-weight:400;font-style:normal;
+}
+
+@font-face {
+    font-family:UbuntuCondensed;src:url(https://urionlinejudge.r.worldssl.net/judge/fonts/4.1/UbuntuCondensed.woff2) format('woff2'),url(https://urionlinejudge.r.worldssl.net/judge/fonts/4.1/UbuntuCondensed.woff) format('woff'),url(https://urionlinejudge.r.worldssl.net/judge/fonts/4.1/UbuntuCondensed.ttf) format('ttf'),url(https://urionlinejudge.r.worldssl.net/judge/fonts/4.1/UbuntuCondensed.eot) format('eot');font-weight:400;font-style:normal;
+}
+
+.both {
+    clear: both;
+}
+
+#container {
+    min-width: 1000px;
+}
+
+.content {
+    margin: 0 auto;
+    width: 980px;
+}
+
+.main-content {
+    display: inline-block;
+    width: 700px;
+}
+
+.main-content-big {
+    display: inline-block;
+    width: 920px;
+    margin: 0 30px;
+}
+
+.page {
+    background: #fff;
+    border-left: #BBB solid 1px;
+    border-right: #BBB solid 1px;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,.5);
+    min-height: 720px;
+}
+
+.ribbon {
+    background: #454545;
+    border-bottom: #2f2f2f solid 1px;
+    height: 29px;
+}
+
+#side-bar {
+    float: left;
+}
+
+#page-name,#page-name-c {
+    background-repeat: no-repeat;
+    border: 1px solid #BBB;
+    border-radius: 0 0 5px 5px;
+    border-top: 0;
+    margin: 0 0 30px;
+    width: 100%;
+}
+
+#page-name {
+    background-image: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/header-set.030914.jpg);
+}
+
+#page-name-c {
+    background-image: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/category-header.030914.jpg);
+}
+
+#page-name h1,#page-name-c h1 {
+    font-family: BryantRegular;
+    font-size: 26px;
+    font-weight: 700;
+    padding: 10px 10px 10px 80px;
+    text-transform: uppercase;
+}
+
+#page-name p,#page-name-c p {
+    background: #f3f3f3;
+    border-radius: 0 0 5px 5px;
+    border-top: #bbb solid 1px;
+    padding: 7px 10px;
+}
+
+.flash {
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 7px 10px;
+    margin: 0 0 10px;
+}
+
+.flash-success {
+    background: #adce07;
+    border: 1px solid #8fa813;
+    border-bottom: #8fa813 solid 3px;
+    color: #FFF;
+}
+
+.flash-failure {
+    background: #ed5153;
+    border: 1px solid #e14043;
+    border-bottom: #e14043 solid 3px;
+    color: #FFF;
+}
+
+.auth {
+    margin: 10px 0;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.flash-auth-success {
+    color: #8fa813;
+    font-family: BryantRegular;
+}
+
+.flash-auth-failure {
+    color: #ed5153;
+    font-family: BryantRegular;
+}
+
+#header {
+    border-bottom: #BBB solid 3px;
+    position: relative;
+}
+
+.footer-content {
+    color: #fcfcfc;
+    font-size: 11px;
+    margin: 0 auto;
+    width: 986px;
+}
+
+#footer {
+    border-top: #BBB solid 3px;
+}
+
+#footer a {
+    color: #FFF;
+}
+
+#footer .site-coyright {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    float: left;
+    padding: 10px 10px 8px 30px;
+    width: 25%;
+}
+
+#footer .site-information {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    float: left;
+    padding: 10px 10px 8px;
+    text-align: center;
+    width: 50%;
+}
+
+#footer .site-information li {
+    display: inline-block;
+    padding: 0 3px;
+}
+
+.site-information li.division {
+    color: #BBB;
+}
+
+#footer .site-version {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    float: right;
+    padding: 10px 30px 8px 10px;
+    text-align: right;
+    width: 25%;
+}
+
+#logo {
+    border: 1px solid #BBB;
+    border-top: 0;
+    border-radius: 0 0 5px 5px;
+    margin: 0 30px 30px;
+    width: 188px;
+}
+
+#logo a {
+    display: block;
+    text-align: center;
+}
+
+#logo img {
+    margin: 20px 0;
+}
+
+#logo span {
+    font-family: UbuntuCondensed;
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    padding: 4px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#logo .information {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/4.0/interna-logo-info.091214.png) no-repeat center #f6f6f6;
+    border-bottom: #BBB solid 1px;
+    border-top: #BBB solid 1px;
+    height: 40px;
+}
+
+#logo .user-information {
+    padding: 10px 13px;
+}
+
+#menu {
+    margin: 0 20px;
+    text-align: center;
+}
+
+#menu li {
+    display: inline-block;
+    padding: 8px 6px;
+    position: relative;
+}
+
+#menu li a {
+    color: #fff;
+    font-family: UbuntuCondensed;
+    font-size: 12px;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    text-transform: uppercase;
+}
+
+#menu li a:hover {
+    color: #ff5040;
+}
+
+#menu li em{
+    background: #ef4130;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    font-family: BryantRegular;
+    font-size: 10px;
+    line-height: 10px;
+    min-width: 7px;
+    padding: 1px 3px;
+    position: absolute;
+    right: -6px;
+    top: 4px;
+}
+
+#top-rank {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/trophy.030914.jpg) 41px 6px no-repeat #f3f3f3;
+    border: 1px solid #BBB;
+    border-radius: 5px;
+    margin: 30px;
+    padding: 0 0 15px;
+    width: 188px;
+}
+
+#top-rank span {
+    background: #fff;
+    border-bottom: #BBB solid 1px;
+    border-top: #BBB solid 1px;
+    box-shadow: 0 0 0 #9f9f9f;
+    display: block;
+    font-family: UbuntuCondensed;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 83px 0 15px;
+    padding: 7px;
+    text-align: center;
+}
+
+#top-rank p {
+    color: #aaa;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 10px 0 0;
+    text-align: center;
+}
+
+#top-rank li {
+    border-top: #f3f3f3 solid 1px;
+    border-bottom: #f3f3f3 solid 1px;
+    padding: 4px 20px;
+}
+
+#top-rank li:hover {
+    color: #d51b42;
+    background: #fff;
+    border-top: #BBB dashed 1px;
+    border-bottom: #BBB dashed 1px;
+}
+
+label {
+    color: #454545;
+    display: block;
+    font-size: 13px;
+    margin: 0 0 5px;
+    text-indent: 5px;
+}
+
+input[type=email],input[type=password],input[type=text],select,textarea {
+    color: #333;
+    background: #fff;
+    border: 1px solid #BBB;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.075);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0 0 15px;
+    min-height: 34px;
+    padding: 7px 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+input[readonly=readonly],select[disabled=disabled],textarea[readonly=readonly] {
+    background: #f3f3f3;
+}
+
+input[type=checkbox] {
+    float: left;
+}
+
+select {
+    -webkit-appearance: menulist-button;
+}
+
+.checkbox label {
+    display: inline-block;
+    margin: 3px 0;
+}
+
+textarea {
+    min-height: 300px;
+    resize: none;
+}
+
+input[type=submit] {
+    border-radius: 3px;
+    color: #FFF;
+    cursor: pointer;
+    font-family: BryantRegular;
+    height: 33px;
+    margin: 0;
+    padding: 7px 15px;
+    text-transform: uppercase;
+}
+
+form .error-message {
+    background: #ffe1e1;
+    border-left: #ef4130 solid 3px;
+    color: #ef4130;
+    font-weight: 700;
+    margin: 0 0 10px;
+    padding: 5px;
+}
+
+#RunSourceCode,#SubmissionSourceCode {
+    height: 443px;
+}
+
+.login-left,.login-right {
+    float: left;
+    margin: 45px 25px 0;
+    width: 300px;
+}
+
+.login-left div,.login-right div {
+    height: 265px;
+    margin: 0 0 50px;
+}
+
+.login-left h1,.login-right h1 {
+    border-bottom: #c2c2c2 solid 1px;
+    color: #b0b0b0;
+    font-family: UbuntuCondensed;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 0 0 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.login-left p,.login-right p {
+    color: #454545;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.login-left a,.login-right a {
+    color: #ef4130;
+    display: block;
+    font-family: BryantRegular;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.login-left a:hover,.login-right a:hover {
+    color: #ff8400;
+}
+
+.login-left p {
+    margin: 40px 0 100px 150px;
+}
+
+.login-right p {
+    margin: 40px 150px 100px 0;
+    text-align: right;
+}
+
+.l-icon {
+    background-image: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/login-image-set.110914.jpg);
+    background-repeat: no-repeat;
+}
+
+#li-about {
+    background-position: 0 0;
+}
+
+#li-rank {
+    background-position: 152px -272px;
+}
+
+#li-repository {
+    background-position: 0 -539px;
+}
+
+#li-academic {
+    background-position: 152px -805px;
+}
+
+#li-forum {
+    background-position: 0 -1080px;
+}
+
+#li-contests {
+    background-position: 152px -1350px;
+}
+
+#sponsors li {
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    display: inline-block;
+    height: 80px;
+    margin: 0 0 15px;
+    width: 125px;
+}
+
+#sponsors img {
+    margin: 10px;
+}
+
+.sp-right {
+    float: right;
+}
+
+.login-center {
+    float: left;
+    margin: 25px 0 0;
+    width: 270px;
+}
+
+.login-center a {
+    display: block;
+}
+
+.login-center .logo {
+    padding: 40px 0 0;
+    text-align: center;
+}
+
+#users-form-error {
+    color: #00bbd6;
+    font-family: BryantRegular;
+    height: 20px;
+    margin: 0 0 20px;
+}
+
+#users-form {
+    margin: 30px 0;
+}
+
+#sponsors span,#users-form span {
+    color: #ef4130;
+    display: block;
+    font-family: BryantRegular;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+#users-form .submit {
+    float: right;
+}
+
+#users-register {
+    border: 1px solid #BBB;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+    margin: 30px 0;
+    padding: 15px;
+    text-align: left;
+}
+
+#users-register h1 a {
+    color: #ef4130;
+    font-family: BryantRegular;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 0 0 5px;
+    text-align: left;
+}
+
+#users-register p {
+    color: #454545;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+#users-register strong {
+    font-weight: 700;
+}
+
+#users-password {
+    float: left;
+    line-height: 16px;
+    padding: 0 5px;
+    width: 150px;
+}
+
+.language-id,.problem-id {
+    display: inline-block;
+    width: 48%;
+}
+
+.language-id {
+    float: right;
+}
+
+#box-information,#box-information-big,#box-information-small {
+    background: #f3f3f3;
+    border: 1px solid #BBB;
+    border-bottom: #BBB solid 3px;
+    border-radius: 5px;
+    float: left;
+    font-weight: 700;
+    height: 13px;
+    padding: 9px 10px 8px;
+    margin: 0 0 30px;
+}
+
+#box-information-small {
+    width: 442px;
+}
+
+#box-information {
+    width: 545px;
+}
+
+#box-information-big {
+    width: 678px;
+}
+
+#table {
+    background: #f3f3f3;
+    border: 1px solid #BBB;
+    border-radius: 5px;
+    margin: 0 0 30px;
+}
+
+table {
+    width: 100%;
+}
+
+table tbody {
+    border-top: #BBB solid 1px;
+    border-bottom: #BBB solid 1px;
+}
+
+table tr {
+    height: 22px;
+}
+
+table tr th {
+    background: #DDD;
+    border-top: #BBB solid 1px;
+    color: #4b4b4a;
+    font-weight: 700;
+    padding: 5px;
+}
+
+table tr th a {
+    font-weight: 700;
+    color: #4b4b4a;
+}
+
+table tr td {
+    padding: 0 5px;
+    vertical-align: middle;
+}
+
+td.truncate {
+    max-width: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 178px;
+}
+
+table .today a {
+    color: #ef4130;
+    font-weight: 700;
+}
+
+table .impar {
+    background: #FFF;
+}
+
+table .par {
+    background: #f3f3f3;
+}
+
+table .center {
+    text-align: center;
+}
+
+table .left {
+    text-align: left;
+}
+
+table .tiny {
+    text-align: center;
+    width: 5%;
+}
+
+table .id,table .small {
+    text-align: center;
+    width: 10%;
+}
+
+table .medium {
+    text-align: center;
+    width: 15%;
+}
+
+table .acronym{
+    width: 12%;
+}
+
+table .semi-wide {
+    width: 20%;
+}
+
+table .wide {
+    width: 27%;
+}
+
+table .wide span {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 170px;
+}
+
+table .large {
+    width: 35%;
+}
+
+#page-info,#table-info {
+    background: #FFF;
+    border: 1px solid #BBB;
+    border-radius: 5px;
+    display: inline-block;
+    float: left;
+    padding: 5px;
+    text-align: center;
+    width: 145px;
+}
+
+#table-info {
+    margin: 6px 5px;
+}
+
+#page-info {
+    margin: 6px 0;
+}
+
+#table-paging {
+    float: right;
+    margin: 6px 3px;
+    text-align: right;
+    width: 400px;
+}
+
+#table-paging .disabled,#table-paging a {
+    background: #FFF;
+    border: 1px solid #BBB;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 3px;
+    padding: 5px;
+    text-align: center;
+    width: 55px;
+}
+
+#table-paging .disabled {
+    cursor: default;
+    opacity: .5;
+}
+
+#table-paging span a {
+    color: #454545;
+}
+
+#table-paging a:hover {
+    background-color: #DDD;
+}
+
+#table-paging .current,#table-paging .current:hover {
+    background-color: #FFF;
+}
+
+.list {
+    position: relative;
+    margin: 27px 0 35px;
+}
+
+.form-ajax {
+    position: relative;
+}
+
+#ajax {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/ajax-transparent.030914.png);
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+#ajax div {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/fetching.030914.gif) no-repeat center;
+    height: 100%;
+    width: 100%;
+}
+
+.pn-rank {
+    background-position: 7px 0;
+}
+
+.pn-academic,.pn-university {
+    background-position: 9px -52px;
+}
+
+.pn-achievements,.pn-credits,.pn-latest {
+    background-position: 9px -103px;
+}
+
+.pn-help {
+    background-position: 9px -151px;
+}
+
+.pn-statistics {
+    background-position: 8px -202px;
+}
+
+.pn-profile-male {
+    background-position: 7px -754px;
+}
+
+.pn-profile-female {
+    background-position: 7px -803px;
+}
+
+.pn-all-problems {
+    background-position: 7px -952px;
+}
+
+.pn-recommended {
+    background-position: 7px -900px;
+}
+
+.pn-settings {
+    background-position: 6px -251px;
+}
+
+.pn-runs {
+    background-position: 9px -350px;
+}
+
+.pn-submit {
+    background-position: 10px -401px;
+}
+
+.pn-category,.pn-search {
+    background-position: 6px -450px;
+}
+
+.pn-groups {
+    background-position: 9px -500px;
+}
+
+.pn-homework {
+    background-position: 9px -550px;
+}
+
+.pn-news {
+    background-position: 9px -703px;
+}
+
+.pn-feedback {
+    background-position: 6px -850px;
+}
+
+.pn-code {
+    background-position: 8px -300px;
+}
+
+.pn-live,.pn-loading,.pn-offline {
+    background-position: 9px -654px;
+}
+
+.pn-dashboard {
+    background-position: 8px -1053px;
+}
+
+.pn-cookies {
+    background-position: 8px -1002px;
+}
+
+.pn-privacy {
+    background-position: 8px -1201px;
+}
+
+.pn-answers,.pn-terms {
+    background-position: 11px -1150px;
+}
+
+.pn-tried {
+    background-position: 10px -604px;
+}
+
+.pn-toolkit {
+    background-position: 10px -1252px;
+}
+
+.pn-contests {
+    background-position: 8px -1300px;
+}
+
+.pn-contest {
+    background-position: 8px -1352px;
+}
+
+.pn-contest-run {
+    background-position: 8px -1402px;
+}
+
+.pn-challenges {
+    background-position: 8px -1452px;
+}
+
+.pn-submissions {
+    background-position: 8px -1500px;
+}
+
+.pn-dashboard h1,.pn-toolkit h1 {
+    color: #ef4130;
+}
+
+.pn-live h1 {
+    color: #96d434;
+}
+
+.pn-offline h1 {
+    color: #ef4130;
+}
+
+.pn-loading h1 {
+    color: #f39c12;
+}
+
+.pn-recommended h1 {
+    color: #006ca6;
+}
+
+.pn-all-problems h1 {
+    color: #a68500;
+}
+
+.pn-feedback h1 {
+    color: #f39c12;
+}
+
+.pn-news h1 {
+    color: #9b59b6;
+}
+
+.pn-answers h1,.pn-rank h1 {
+    color: #f3bf41;
+}
+
+.pn-academic h1,.pn-university h1 {
+    color: #646158;
+}
+
+.pn-achievements h1,.pn-credits h1,.pn-latest h1 {
+    color: #ef4500;
+}
+
+.pn-code h1 {
+    color: #7a9eaa;
+}
+
+.pn-statistics h1 {
+    color: #ef4500;
+}
+
+.pn-submit h1 {
+    color: #adce07;
+}
+
+.pn-groups h1 {
+    color: #e67e22;
+}
+
+.pn-runs h1 {
+    color: #4cabb9;
+}
+
+.pn-category h1,.pn-search h1 {
+    color: #ef4500;
+}
+
+.pn-profile-male h1 {
+    color: #21c6d5;
+}
+
+.pn-profile-female h1 {
+    color: #db4cba;
+}
+
+.pn-settings h1 {
+    color: #9d4c7b;
+}
+
+.pn-tried h1 {
+    color: #ef4130;
+}
+
+.pn-help h1 {
+    color: #a957be;
+}
+
+.pn-cookies h1 {
+    color: #b07c59;
+}
+
+.pn-privacy h1 {
+    color: #ba53bf;
+}
+
+.pn-terms h1 {
+    color: #f2ca3a;
+}
+
+.pn-homework h1 {
+    color: #e74c3c;
+}
+
+.pn-contests h1 {
+    color: #ef4130;
+}
+
+.pn-contest h1,.pn-contest-run h1 {
+    color: #456399;
+}
+
+.pn-challenges h1 {
+    color: #ef4130;
+}
+
+.pn-submissions h1 {
+    color: #977873;
+}
+
+.pn-c-1 {
+    background-position: 25px -1px;
+}
+
+.pn-c-2 {
+    background-position: 25px -53px;
+}
+
+.pn-c-3 {
+    background-position: 25px -102px;
+}
+
+.pn-c-4 {
+    background-position: 25px -152px;
+}
+
+.pn-c-5 {
+    background-position: 25px -203px;
+}
+
+.pn-c-6 {
+    background-position: 25px -253px;
+}
+
+.pn-c-7 {
+    background-position: 25px -302px;
+}
+
+.pn-c-8 {
+    background-position: 25px -353px;
+}
+
+.pn-c-1 h1 {
+    color: #12a197;
+}
+
+.pn-c-2 h1 {
+    color: #ea7c30;
+}
+
+.pn-c-3 h1 {
+    color: #52af18;
+}
+
+.pn-c-4 h1 {
+    color: #d11d26;
+}
+
+.pn-c-5 h1 {
+    color: #8d816f;
+}
+
+.pn-c-6 h1 {
+    color: #96C;
+}
+
+.pn-c-7 h1 {
+    color: #d21151;
+}
+
+.pn-c-8 h1 {
+    color: #31271f;
+}
+
+.send-settings {
+    background: #f39c12;
+    border: 1px solid #e67e22;
+    border-bottom: #e67e22 solid 3px;
+    float: right;
+    width: 105px;
+}
+
+.send-university {
+    background: #646158;
+    border: 1px solid #424038;
+    border-bottom: #424038 solid 3px;
+    float: right;
+    width: 105px;
+}
+
+.send-academic {
+    background: #3498db;
+    border: 1px solid #2980b9;
+    border-bottom: #2980b9 solid 3px;
+    float: right;
+    width: 105px;
+}
+
+.send-div-settings {
+    float: right;
+    margin: 0 0 30px;
+}
+
+.send-search,.send-sign-in,.send-toolkit {
+    background: #ed5153;
+    border: 1px solid #e14043;
+    border-bottom: #e14043 solid 3px;
+    color: #FFF;
+}
+
+.send-toolkit {
+    float: right;
+    width: 105px;
+}
+
+.send-search {
+    width: 87px;
+}
+
+.send-submit {
+    background: #adce07;
+    border: 1px solid #8fa813;
+    border-bottom: #8fa813 solid 3px;
+    color: #FFF;
+    float: right;
+    width: 105px;
+}
+
+.send-filter {
+    background: #4cabb9;
+    border: 1px solid #36828e;
+    border-bottom: #36828e solid 3px;
+    color: #FFF;
+    padding: 7px 0;
+    width: 82px;
+}
+
+.answer {
+    font-weight: 700;
+}
+
+.a-1,.a-1 a {
+    color: #0A0;
+}
+
+.a-2,.a-2 a {
+    color: #e5af25;
+}
+
+.a-3,.a-3 a {
+    color: #0AA;
+}
+
+.a-4,.a-4 a {
+    color: #004fc5;
+}
+
+.a-5,.a-5 a {
+    color: #660;
+}
+
+.a-6,.a-6 a {
+    color: red;
+}
+
+.a-7,.a-7 a {
+    color: #992ac9;
+}
+
+.a-8,.a-8 a {
+    color: #7e00f4;
+}
+
+.a-9,.a-9 a {
+    color: #274d70;
+}
+
+#credits,#dashboard {
+    margin: 30px 0;
+}
+
+#dashboard li {
+    background-image: url(https://urionlinejudge.r.worldssl.net/judge/img/4.0/button-set.041114.jpg);
+    background-repeat: no-repeat;
+}
+
+#credits li {
+    background-image: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/credits-button-set.030914.jpg);
+    background-repeat: no-repeat;
+}
+
+#credits div,#dashboard div {
+    float: left;
+    margin: 15px 10px 15px 120px;
+    width: 200px;
+}
+
+.dash-1 a,.dash-1 b {
+    color: #4cabb9;
+}
+
+.dash-2 a,.dash-2 b {
+    color: #96d434;
+}
+
+.dash-3 a,.dash-3 b {
+    color: #ef4130;
+}
+
+.dash-4 a,.dash-4 b {
+    color: #646158;
+}
+
+.dash-5 a,.dash-5 b {
+    color: #a957be;
+}
+
+.dash-6 a,.dash-6 b {
+    color: #f39c12;
+}
+
+.dash-7 a,.dash-7 b {
+    color: #915e45;
+}
+
+.dash-8 a,.dash-8 b {
+    color: #d040b0;
+}
+
+.dash-1 {
+    background-position: -2px -251px;
+    box-shadow: inset 0 0 0 #52cec7;
+    margin: 0 30px 0 0;
+}
+
+.dash-2 {
+    background-position: -2px -370px;
+    box-shadow: inset 0 0 0 #97e030;
+    margin: 0 30px 0 0;
+}
+
+.dash-3 {
+    background-position: -2px -492px;
+    box-shadow: inset 0 0 0 #ef4130;
+    margin: 0 30px 0 0;
+}
+
+.dash-4 {
+    background-position: -6px -613px;
+    box-shadow: inset 0 0 0 #646158;
+    margin: 0 30px 0 0;
+}
+
+.dash-5 {
+    background-position: -3px -860px;
+    box-shadow: inset 0 0 0 #b240e7;
+    margin: 0 30px 0 0;
+}
+
+.dash-6 {
+    background-position: -1px -732px;
+    box-shadow: inset 0 0 0 #f39c12;
+    margin: 0 30px 0 0;
+}
+
+.dash-7 {
+    background-position: -1px -1085px;
+    box-shadow: inset 0 0 0 #c3a08f;
+    margin: 0 30px 0 0;
+}
+
+.dash-8 {
+    background-position: -1px -1215px;
+    box-shadow: inset 0 0 0 #e77fd0;
+    margin: 0 30px 0 0;
+}
+
+.credit-1 a,.credit-1 b {
+    color: #a957be;
+}
+
+.credit-2 a,.credit-2 b {
+    color: #ef4130;
+}
+
+.credit-3 a,.credit-3 b {
+    color: #4cabb9;
+}
+
+.credit-4 a,.credit-4 b {
+    color: #f39c12;
+}
+
+.credit-5 a,.credit-5 b {
+    color: #f5b223;
+}
+
+.credit-0 {
+    background-position: 0 120px;
+    box-shadow: inset 0 0 0 #fff;
+    margin: 0 30px 0 0;
+}
+
+.credit-1 {
+    background-position: -3px -12px;
+    box-shadow: inset 0 0 0 #b240e7;
+    margin: 0 30px 0 0;
+}
+
+.credit-2 {
+    background-position: -2px -145px;
+    box-shadow: inset 0 0 0 #d11d26;
+    margin: 0 30px 0 0;
+}
+
+.credit-3 {
+    background-position: -2px -251px;
+    box-shadow: inset 0 0 0 #52cec7;
+    margin: 0 30px 0 0;
+}
+
+.credit-4 {
+    background-position: -2px -376px;
+    box-shadow: inset 0 0 0 #f39c12;
+    margin: 0 30px 0 0;
+}
+
+.credit-5 {
+    background-position: -2px -492px;
+    box-shadow: inset 0 0 0 #f7c600;
+    margin: 0 30px 0 0;
+}
+
+#facebook {
+    height: 67px;
+    margin: 0 0 30px;
+}
+
+#facebook .fb-like {
+    height: 25px;
+    margin: 9px 25%;
+}
+
+#googleplus {
+    float: left;
+    height: 67px;
+    margin: 0 0 30px 30px;
+    width: 155px;
+}
+
+#googleplus .plus {
+    margin: 9px 45px;
+}
+
+.gc-bubbleDefault {
+    border-spacing: 0!important;
+}
+
+.gc-bubbleDefault tbody {
+    border: none!important;
+}
+
+.gc-reset {
+    height: 100%;
+}
+
+#twitter {
+    float: right;
+    height: 67px;
+    margin: 0 0 30px;
+    width: 150px;
+}
+
+#twitter a {
+    display: block;
+    font-style: italic;
+    margin: 13px;
+    text-align: center;
+}
+
+#category-list li,#credits li,#dashboard li {
+    background-color: #FFF;
+    border-radius: 5px;
+    border: 1px solid #BBB;
+    cursor: pointer;
+    height: 97px;
+    position: relative;
+    width: 333px;
+}
+
+#category-list li.odd,#credits li.odd,#dashboard li.odd {
+    float: right;
+    margin: 0 0 30px;
+}
+
+#category-list li.even,#credits li.even,#dashboard li.even {
+    float: left;
+    margin: 0 0 30px;
+}
+
+#category-list span,#credits span,#dashboard span {
+    display: block;
+    float: left;
+    font-family: SketchRockwellRegular;
+    font-size: 100px;
+    height: 97px;
+    text-align: center;
+    width: 115px;
+}
+
+#category-list div {
+    float: left;
+    margin: 15px 0;
+    width: 190px;
+}
+
+#category-list a,#credits a,#dashboard a {
+    display: block;
+    font-family: BryantRegular;
+    font-size: 16px;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin: 0 0 7px;
+}
+
+#category-list b,#credits b,#dashboard b {
+    display: inline-block;
+    font-family: BryantRegular;
+    font-size: 12px;
+    padding: 5px 0 0;
+    width: 190px;
+}
+
+#credits i,#dashboard i {
+    font-size: 10px;
+}
+
+#category-list p,#credits p,#dashboard p {
+    line-height: 15px;
+}
+
+.category-1 a,.category-1 b,.category-1 span {
+    color: #12a197;
+}
+
+.category-2 a,.category-2 b,.category-2 span {
+    color: #ea7c30;
+}
+
+.category-3 a,.category-3 b,.category-3 span {
+    color: #52af18;
+}
+
+.category-4 a,.category-4 b,.category-4 span {
+    color: #d11d26;
+}
+
+.category-5 a,.category-5 b,.category-5 span {
+    color: #8d816f;
+}
+
+.category-6 a,.category-6 b,.category-6 span {
+    color: #96c;
+}
+
+.category-7 a,.category-7 b,.category-7 span {
+    color: #d21151;
+}
+
+.category-8 a,.category-8 b,.category-8 span {
+    color: #31271f;
+}
+
+.category-all a,.category-all b {
+    color: #a68500;
+}
+
+.category-recommended a,.category-recommended b {
+    color: #006ca6;
+}
+
+.category-1 {
+    box-shadow: inset 0 0 0 #12a197;
+}
+
+.category-2 {
+    box-shadow: inset 0 0 0 #ea7c30;
+}
+
+.category-3 {
+    box-shadow: inset 0 0 0 #52af18;
+}
+
+.category-4 {
+    box-shadow: inset 0 0 0 #d11d26;
+}
+
+.category-5 {
+    box-shadow: inset 0 0 0 #8d816f;
+}
+
+.category-6 {
+    box-shadow: inset 0 0 0 #96C;
+}
+
+.category-7 {
+    box-shadow: inset 0 0 0 #d21151;
+}
+
+.category-8 {
+    box-shadow: inset 0 0 0 #31271f;
+}
+
+.category-all,.category-recommended {
+    background-image: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/button-set.030914.jpg);
+    background-repeat: no-repeat;
+}
+
+.category-all {
+    background-position: -2px -130px;
+    box-shadow: inset 0 0 0 #f7c600;
+    float: left;
+    margin: 0 0 30px;
+}
+
+.category-recommended {
+    background-position: -2px -8px;
+    box-shadow: inset 0 0 0 #5e98b7;
+    float: right;
+    margin: 0 0 30px;
+}
+
+#description {
+    margin: 15px 0 30px;
+}
+
+#description-html {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/loading.030914.gif) 325px 250px no-repeat;
+    min-height: 575px;
+    opacity: 0;
+    width: 100%;
+}
+
+#badge-bar,#challenge-menu,#place,#problem-menu,#rk-language,.information-box {
+    background: #FFF;
+    border: 1px solid #BBB;
+    border-radius: 5px;
+    margin: 0 30px 30px;
+    overflow: hidden;
+    position: relative;
+    width: 188px;
+}
+
+#challenge-menu .image,#problem-menu .image {
+    border-radius: 0 0 0 5px;
+    border-right: 1px solid #BBB;
+    height: 75%;
+    left: 0;
+    position: absolute;
+    top: 31px;
+    width: 75px;
+}
+
+#challenge-menu .image {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/4.0/language.051214.gif) -2px 7px no-repeat;
+}
+
+#problem-menu .image {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/4.0/problem.301114.jpg) 3px center no-repeat;
+}
+
+#rk-language .image {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/4.0/language.051214.gif) -2px 9px no-repeat;
+}
+
+#challenge-menu.information {
+    float: right;
+    margin: 5px 0;
+    width: 112px;
+}
+
+#challenge-menu h3,.information-box h3 {
+    border-radius: 3px 3px 0 0;
+    border-bottom: 1px solid #BBB;
+    font-family: UbuntuCondensed;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    color: #FFF;
+}
+
+#challenge-menu h3 {
+    background: #f3f3f3;
+    color: #454545;
+    font-size: 22px;
+    padding: 4px 0;
+}
+
+#challenge-menu span {
+    display: none;
+}
+
+#challenge-menu li a {
+    border-bottom: #FFF dashed 1px;
+    border-top: #FFF dashed 1px;
+    color: #454545;
+    display: block;
+    padding: 4px 20px;
+}
+
+#challenge-menu a:hover {
+    background: #f3f3f3;
+    border-color: #BBB;
+}
+
+#place .image {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/judge-set.030914.jpg) -2px -184px no-repeat;
+    border-radius: 0 0 0 5px;
+    border-right: 1px solid #BBB;
+    height: 77px;
+    left: 0;
+    position: absolute;
+    top: 28px;
+    width: 75px;
+}
+
+#rk-language .image {
+    border-radius: 0 0 0 5px;
+    border-right: 1px solid #BBB;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 28px;
+    width: 75px;
+}
+
+#challenge-menu .information,#place .information,#problem-menu .information,#rk-language .information {
+    float: right;
+    margin: 5px 0;
+    width: 112px;
+}
+
+#badge-bar h3,#place h3,#problem-menu h3,#rk-language h3,.information-box h3 {
+    border-radius: 3px 3px 0 0;
+    border-bottom: 1px solid #BBB;
+    color: #FFF;
+    font-family: UbuntuCondensed;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+#problem-menu h3 {
+    font-size: 22px;
+    padding: 4px 0;
+}
+
+#problem-menu span {
+    display: none;
+}
+
+#badge-bar h3,#place h3,#rk-language h3,.information-box h3 {
+    background: #f3f3f3;
+    color: #454545;
+    font-size: 15px;
+    padding: 6px 0;
+}
+
+#problem-menu li a,#rk-language li a {
+    border-bottom: #FFF dashed 1px;
+    border-top: #FFF dashed 1px;
+    color: #454545;
+    display: block;
+    padding: 4px 20px;
+}
+
+#problem-menu li a:hover,#rk-language li a:hover {
+    background: #f3f3f3;
+    border-color: #BBB;
+}
+
+#place li {
+    padding: 5px 20px;
+}
+
+#place li span {
+    font-weight: 700;
+    padding: 0 5px 0 0;
+}
+
+.place-view,.small-view {
+    background: #f3f3f3;
+    border-radius: 0 0 3px 3px;
+    border-top: #BBB solid 1px;
+    box-sizing: border-box;
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.place-view {
+    float: left;
+}
+
+.information-box p {
+    display: table-cell;
+    line-height: 18px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.information-box h3.tried {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/checking.030914.jpg) center -45px no-repeat;
+}
+
+.information-box h3.checking {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/checking.030914.jpg) center -6px no-repeat;
+}
+
+.information-box .like {
+    line-height: 17px;
+    margin: 10px;
+    text-align: center;
+}
+
+#login-menu {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/ballons.030914.jpg) center -20px no-repeat;
+    font-family: BebasNeueRegular;
+    font-size: 18px;
+}
+
+#login-menu a {
+    background: #f3f3f3;
+    border-radius: 0 0 5px 5px;
+    border-top: #BBB solid 1px;
+    display: block;
+    margin: 75px 0 0;
+    padding: 7px;
+    text-align: center;
+}
+
+#logged-out-menu,#submission-menu {
+    margin: 0 30px 30px;
+}
+
+#logged-out-menu li,#submission-menu li {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/judge-set.030914.jpg) no-repeat #FFF;
+    border-radius: 5px;
+    border: 1px solid #BBB;
+    cursor: pointer;
+    height: 50px;
+    margin: 0 0 27px;
+    padding: 12px 10px 12px 80px;
+    width: 98px;
+}
+
+#logged-out-menu a,#submission-menu a {
+    font-family: BryantRegular;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin: 0 0 7px;
+}
+
+#logged-out-menu p,#submission-menu p {
+    display: inline-block;
+    line-height: 15px;
+}
+
+#logged-out-menu .menu-1,#submission-menu .menu-1 {
+    background-position: -5px -517px;
+    box-shadow: inset 0 0 0 #52cec7;
+}
+
+#submission-menu .menu-2 {
+    background-position: -5px -599px;
+    box-shadow: inset 0 0 0 #97e030;
+}
+
+#submission-menu .menu-3 {
+    background-position: -9px -685px;
+    box-shadow: inset 0 0 0 #ef4130;
+}
+
+#submission-menu .menu-4 {
+    background-position: -9px -259px;
+    box-shadow: inset 0 0 0 #52cec7;
+}
+
+#submission-menu .menu-5 {
+    background-position: -4px -345px;
+    box-shadow: inset 0 0 0 #b240e7;
+}
+
+#submission-menu .menu-6 {
+    background-position: -9px -433px;
+    box-shadow: inset 0 0 0 #f9cd2e;
+}
+
+#logged-out-menu .menu-1 a,#submission-menu .menu-1 a {
+    color: #4cabb9;
+}
+
+#submission-menu .menu-2 a {
+    color: #96d434;
+}
+
+#submission-menu .menu-3 a {
+    color: #ef4130;
+}
+
+#submission-menu .menu-4 a {
+    color: #4cabb9;
+}
+
+#submission-menu .menu-5 a {
+    color: #a957be;
+}
+
+#submission-menu .menu-6 a {
+    color: #f3bf41;
+}
+
+#rank-menu {
+    margin: 0 30px 30px;
+}
+
+#rank-menu li {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/judge-set.030914.jpg) no-repeat #fff;
+    border-radius: 5px;
+    border: 1px solid #BBB;
+    cursor: pointer;
+    height: 50px;
+    margin: 0 0 27px;
+    padding: 12px 10px 12px 80px;
+    width: 98px;
+}
+
+#rank-menu a {
+    font-family: BryantRegular;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin: 0 0 7px;
+}
+
+#rank-menu p {
+    display: inline-block;
+    line-height: 15px;
+}
+
+#logged-out-menu .menu-2,#rank-menu .menu-1 {
+    background-position: -8px -3px;
+    box-shadow: inset 0 0 0 #f9cd2e;
+}
+
+#rank-menu .menu-2 {
+    background-position: -7px -90px;
+    box-shadow: inset 0 0 0 #646158;
+}
+
+#rank-menu .menu-3 {
+    background-position: 0 -172px;
+    box-shadow: inset 0 0 0 #ef4130;
+}
+
+#rank-menu .menu-4 {
+    background-position: -7px -258px;
+    box-shadow: inset 0 0 0 #52cec7;
+}
+
+#rank-menu .menu-5 {
+    background-position: -4px -344px;
+    box-shadow: inset 0 0 0 #b240e7;
+}
+
+#logged-out-menu .menu-2 a,#rank-menu .menu-1 a {
+    color: #f3bf41;
+}
+
+#rank-menu .menu-2 a {
+    color: #646158;
+}
+
+#rank-menu .menu-3 a {
+    color: #ef4130;
+}
+
+#rank-menu .menu-4 a {
+    color: #4cabb9;
+}
+
+#rank-menu .menu-5 a {
+    color: #a957be;
+}
+
+.p-level-1,.p-level-10,.p-level-2,.p-level-3,.p-level-4,.p-level-5,.p-level-6,.p-level-7,.p-level-8,.p-level-9 {
+    color: #fff;
+}
+
+.p-level-1 {
+    background: #D2527F;
+}
+
+.p-level-2 {
+    background: #EB9532;
+}
+
+.p-level-3 {
+    background: #87D37C;
+}
+
+.p-level-4 {
+    background: #EF4836;
+}
+
+.p-level-5 {
+    background: #E29C45;
+}
+
+.p-level-6 {
+    background: #9B59B6;
+}
+
+.p-level-7 {
+    background: #5D8CAE;
+}
+
+.p-level-8 {
+    background: #E2B13C;
+}
+
+.p-level-9 {
+    background: #95A5A6;
+}
+
+.p-level-10 {
+    background: #454545;
+}
+
+.p-level-cor-1 {
+    color: #dd42ac;
+}
+
+.p-level-cor-2 {
+    color: #cb4c00;
+}
+
+.p-level-cor-3 {
+    color: #2ba653;
+}
+
+.p-level-cor-4 {
+    color: #cf0b16;
+}
+
+.p-level-cor-5 {
+    color: #d08400;
+}
+
+.p-level-cor-6 {
+    color: #7f3cef;
+}
+
+.p-level-cor-7 {
+    color: #3674cc;
+}
+
+.p-level-cor-8 {
+    color: #f7ae00;
+}
+
+.p-level-cor-9 {
+    color: #525f72;
+}
+
+.p-level-cor-10 {
+    color: #bfbcbc;
+}
+
+#profile-bar {
+    background: #f3f3f3;
+    border: 1px solid #BBB;
+    border-radius: 5px;
+    margin: 0 30px 30px;
+    width: 188px;
+}
+
+.pb-avatar {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/avatar.030914.jpg) no-repeat center #fff;
+    border-radius: 5px 5px 0 0;
+    border-bottom: #bbb solid 1px;
+    height: 188px;
+    margin: 0 0 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pb-username {
+    background: #FFF;
+    border-bottom: #BBB solid 1px;
+    border-top: #BBB solid 1px;
+    display: table-cell;
+    font-family: UbuntuCondensed;
+    font-weight: 700;
+    font-size: 15px;
+    height: 50px;
+    padding: 0 10px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 188px;
+}
+
+.pb-information {
+    background: #FFF;
+    border-bottom: #BBB solid 1px;
+    border-top: #BBB solid 1px;
+    margin: 12px 0;
+}
+
+.pb-information li {
+    padding: 4px 10px 4px 20px;
+}
+
+.pb-information li span {
+    font-weight: 700;
+    padding: 0 5px 0 0;
+}
+
+.pb-badges {
+    background: #FFF;
+    border-top: #BBB solid 1px;
+    height: 128px;
+}
+
+.pb-badges li {
+    background-image: url(https://urionlinejudge.r.worldssl.net/judge/img/4.0/badges.180115.png);
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    height: 53px;
+    margin: 7px 0 0 7px;
+    width: 53px;
+}
+
+.pb-badges li span {
+    display: none;
+}
+
+.pb-all-badges {
+    border-top: #BBB solid 1px;
+    display: block;
+    padding: 6px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.badge-0 {
+    background-position: 0 0;
+}
+
+.badge-1 {
+    background-position: 0 -53px;
+}
+
+.badge-2 {
+    background-position: 0 -106px;
+}
+
+.badge-3 {
+    background-position: 0 -159px;
+}
+
+.badge-4 {
+    background-position: -318px 0;
+}
+
+.badge-5 {
+    background-position: -106px 0;
+}
+
+.badge-6 {
+    background-position: -53px 0;
+}
+
+.badge-7 {
+    background-position: -371px 0;
+}
+
+.badge-8 {
+    background-position: -265px -212px;
+}
+
+.badge-9 {
+    background-position: -265px -159px;
+}
+
+.badge-10 {
+    background-position: -53px -53px;
+}
+
+.badge-11 {
+    background-position: -53px -106px;
+}
+
+.badge-12 {
+    background-position: -53px -159px;
+}
+
+.badge-13 {
+    background-position: -106px -53px;
+}
+
+.badge-14 {
+    background-position: -106px -106px;
+}
+
+.badge-15 {
+    background-position: -106px -159px;
+}
+
+.badge-16 {
+    background-position: -371px -53px;
+}
+
+.badge-17 {
+    background-position: -371px -106px;
+}
+
+.badge-18 {
+    background-position: -371px -212px;
+}
+
+.badge-19 {
+    background-position: -371px -159px;
+}
+
+.badge-20 {
+    background-position: -212px -212px;
+}
+
+.badge-21 {
+    background-position: 0 -212px;
+}
+
+.badge-22 {
+    background-position: -265px -53px;
+}
+
+.badge-23 {
+    background-position: -318px -53px;
+}
+
+.badge-24 {
+    background-position: -212px -53px;
+}
+
+.badge-25 {
+    background-position: -212px -106px;
+}
+
+.badge-26 {
+    background-position: -212px -159px;
+}
+
+.badge-27 {
+    background-position: -212px 0;
+}
+
+.badge-28 {
+    background-position: -318px -159px;
+}
+
+.badge-29 {
+    background-position: -265px -106px;
+}
+
+.badge-30 {
+    background-position: -318px -212px;
+}
+
+.badge-31 {
+    background-position: -106px -212px;
+}
+
+.badge-32 {
+    background-position: -53px -212px;
+}
+
+.badge-33 {
+    background-position: -159px 0;
+}
+
+.badge-34 {
+    background-position: -159px -53px;
+}
+
+.badge-35 {
+    background-position: -159px -106px;
+}
+
+.badge-36 {
+    background-position: -159px -159px;
+}
+
+.badge-37 {
+    background-position: -159px -212px;
+}
+
+.badge-38 {
+    background-position: -265px 0;
+}
+
+.badge-39 {
+    background-position: -318px -106px;
+}
+
+.badge-40 {
+    background-position: -424px 0;
+}
+
+.badge-41 {
+    background-position: -424px -53px;
+}
+
+#achievements-list li,#users-list li {
+    border-radius: 5px;
+    border: 1px solid #BBB;
+    float: left;
+    height: 75px;
+    width: 220px;
+}
+
+#users-list li {
+    cursor: pointer;
+}
+
+#achievements-list p,#users-list p {
+    display: table-cell;
+    height: 75px;
+    line-height: 18px;
+    padding: 0 10px 0 0;
+    vertical-align: middle;
+}
+
+#achievements-list p {
+    position: relative;
+}
+
+#achievements-list div,#message .b {
+    background-image: url(https://urionlinejudge.r.worldssl.net/judge/img/4.0/badges.180115.png);
+    background-repeat: no-repeat;
+    float: left;
+    height: 53px;
+    margin: 10px;
+    width: 53px;
+}
+
+#achievements-list em {
+    bottom: 0;
+    color: #777;
+    font-size: 10px;
+    position: absolute;
+    right: 5px;
+}
+
+#users-list div {
+    border: 1px solid #BBB;
+    border-radius: 5px;
+    float: left;
+    height: 53px;
+    margin: 10px;
+    overflow: hidden;
+    width: 53px;
+}
+
+#users-list p {
+    word-break: break-word;
+}
+
+#users-list a {
+    font-weight: 700;
+}
+
+.u-g-female,.u-g-male {
+    background-image: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/user-profile.030914.jpg);
+    background-repeat: no-repeat;
+}
+
+.u-g-male {
+    background-position: -1px -2px;
+}
+
+.u-g-female {
+    background-position: -2px -57px;
+}
+
+.a-l-item,.u-l-item {
+    margin: 0 15px 15px 0;
+}
+
+.a-l-end,.u-l-end {
+    margin: 0 0 15px;
+}
+
+#badge-bar p {
+    display: table-cell;
+    height: 135px;
+    line-height: 18px;
+    padding: 0 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#message {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/achievement.030914.jpg) center 40px no-repeat;
+    height: 250px;
+    width: 400px;
+}
+
+#message h4 {
+    background: #f3f3f3;
+    border-bottom: #BBB solid 1px;
+    border-radius: 5px 5px 0 0;
+    font-family: BebasNeueRegular;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#message p {
+    font-family: BryantRegular;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 125px 0 0;
+    text-align: center;
+}
+
+.edit-left,.edit-right {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    float: left;
+    width: 48%;
+}
+
+.edit-right {
+    float: right;
+}
+
+.edit-change,.edit-suggest {
+    background: #f3f3f3;
+    border: 1px solid #BBB;
+    border-bottom: #BBB solid 3px;
+    border-radius: 5px;
+    display: block;
+    font-weight: 700;
+    padding: 9px 10px;
+    margin: 0 0 15px;
+    width: 45%;
+}
+
+.edit-change {
+    float: right;
+}
+
+.configuration,.edit-suggest {
+    float: left;
+}
+
+.configuration,.geo-location {
+    border: 1px solid #BBB;
+    border-radius: 5px;
+    display: inline-block;
+    height: 280px;
+    margin: 15px 0 30px;
+    width: 48%;
+}
+
+.configuration h2,.geo-location h2 {
+    background: #f3f3f3;
+    border-bottom: #BBB solid 1px;
+    border-radius: 5px 5px 0 0;
+    font-family: UbuntuCondensed;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 6px;
+    text-align: center;
+}
+
+.configuration p {
+    color: #999;
+    font-size: 11px;
+    line-height: 15px;
+    margin: 5px 10px 15px 25px;
+}
+
+.configuration .preferences {
+    margin: 25px 15px;
+}
+
+.geo-location {
+    float: right;
+    overflow: hidden;
+}
+
+#avatar {
+    margin: 0 0 30px;
+    position: relative;
+    width: 100%;
+}
+
+#avatar div {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/button-set.030914.jpg) center -963px;
+    border-right: #BBB solid 1px;
+    float: left;
+    height: 85%;
+    position: absolute;
+    width: 100px;
+}
+
+#avatar p {
+    line-height: 20px;
+    padding: 18px 20px 18px 120px;
+}
+
+#avatar a {
+    color: #ef4310;
+    text-decoration: underline;
+}
+
+#countdown,#countdown-top,#progress {
+    background: #FFF;
+    text-align: center;
+}
+
+#countdown,#progress {
+    border: 1px solid #BBB;
+    border-radius: 5px;
+    position: relative;
+}
+
+#countdown-top {
+    border-bottom: #BBB solid 1px;
+    border-left: #BBB solid 1px;
+    border-right: #BBB solid 1px;
+    border-radius: 0 0 5px 5px;
+}
+
+#countdown p,#countdown-top p,#progress p {
+    background: #f3f3f3;
+    border-bottom: #BBB solid 1px;
+    border-radius: 5px 5px 0 0;
+    font-family: UbuntuCondensed;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 6px;
+}
+
+#countdown h2,#progress h2 {
+    cursor: default;
+    font-family: SketchRockwellRegular;
+    font-size: 100px;
+    line-height: 80px;
+    padding: 10px 0;
+}
+
+#countdown span,#progress span {
+    bottom: 0;
+    color: #aaa;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+}
+
+#progress h2 {
+    color: #e14043;
+}
+
+.c-start {
+    color: #ef4130;
+}
+
+.c-run {
+    color: #454545;
+}
+
+.c-blind {
+    color: #ef4130;
+}
+
+.c-end {
+    color: #999;
+}
+
+.you-here {
+    background: #e1f097;
+    border-bottom: #90ac03 solid 1px;
+    border-top: #90ac03 solid 1px;
+    font-weight: 700;
+}
+
+.filter-box,.st-big-box,.st-box,.st-small-box,.st-wide-box {
+    border: 1px solid #BBB;
+    border-radius: 5px;
+    float: left;
+    overflow: hidden;
+}
+
+.st-wide-box {
+    margin: 0 0 30px;
+    width: 100%;
+}
+
+.st-big-box {
+    width: 500px;
+}
+
+.st-box {
+    width: 330px;
+}
+
+.st-small-box {
+    margin: 0 0 30px 30px;
+    width: 165px;
+}
+
+.filter-box h3,.st-big-box h3,.st-box h3,.st-small-box h3,.st-wide-box h3 {
+    background: #f3f3f3;
+    border-bottom: #BBB solid 1px;
+    font-family: UbuntuCondensed;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: 6px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#progress-box {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/loading.030914.gif) no-repeat center;
+    float: left;
+    height: 262px;
+    margin: 0 30px 30px 0;
+}
+
+#category-box {
+    margin: 0 0 30px;
+}
+
+#answers-box,#languages-box,#runs-breakdown-box {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/loading.030914.gif) no-repeat center;
+}
+
+#answers-box {
+    float: left;
+    height: 320px;
+    margin: 0 30px 30px 0;
+}
+
+#languages-box {
+    height: 320px;
+    margin: 0 0 30px;
+}
+
+#runs-breakdown-box {
+    height: 250px;
+    margin: 0 0 30px;
+}
+
+#visualization-answers,#visualization-languages {
+    height: 280px;
+    margin: 5px auto;
+    width: 300px;
+}
+
+#visualization-breakdown {
+    height: 220px;
+}
+
+#visualization-progress {
+    height: 205px;
+    margin: 15px auto;
+    width: 300px;
+}
+
+.percentage li {
+    border-top: #BBB solid 1px;
+    overflow: hidden;
+    height: 25px;
+}
+
+.percentage li:first-child {
+    border: 0;
+}
+
+.percentage li span,.percentage li strong {
+    display: block;
+    padding: 7px;
+}
+
+.percentage li strong {
+    background: #f3f3f3;
+    border-right: #BBB solid 1px;
+    font-weight: 700;
+    float: left;
+    text-align: right;
+    width: 80px;
+}
+
+.percentage li span {
+    border-left: #BBB solid 1px;
+    float: left;
+    text-align: right;
+    width: 45px;
+}
+
+.percentage li b {
+    padding: 7px 0;
+    display: block;
+}
+
+.p-box {
+    width: 100px;
+    float: left;
+}
+
+.p-box div {
+    height: 15px;
+    float: right;
+    margin: 5px 0;
+}
+
+.p-box-c-0 {
+    background: #BBB;
+}
+
+.p-box-c-1 {
+    background: #12a197;
+}
+
+.p-box-c-2 {
+    background: #ea7c30;
+}
+
+.p-box-c-3 {
+    background: #52af18;
+}
+
+.p-box-c-4 {
+    background: #d11d26;
+}
+
+.p-box-c-5 {
+    background: #8d816f;
+}
+
+.p-box-c-6 {
+    background: #96c;
+}
+
+.p-box-c-7 {
+    background: #d21151;
+}
+
+.p-box-c-8 {
+    background: #31271f;
+}
+
+#hidden-progress {
+    display: none;
+}
+
+.no-progress {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/no-progress.030914.jpg) center 65px no-repeat #FFF;
+    padding: 180px 0 60px;
+    text-align: center;
+}
+
+.no-disciplines h4,.no-progress h4 {
+    font-family: BebasNeueRegular;
+    font-size: 18px;
+}
+
+.no-disciplines p,.no-progress p {
+    padding: 5px;
+}
+
+.no-disciplines {
+    padding: 45px 0;
+    text-align: center;
+}
+
+#problem-statistics {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/4.0/judge.051214.gif) center 34px no-repeat;
+    height: 250px;
+}
+
+#problem-statistics p {
+    background: #f3f3f3;
+    border-bottom: #BBB solid 1px;
+    border-top: #BBB solid 1px;
+    font-family: UbuntuCondensed;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 78px 0 0;
+    padding: 5px;
+    text-align: center;
+}
+
+#problem-statistics dl {
+    line-height: 18px;
+    padding: 10px 20px;
+}
+
+#problem-statistics dt {
+    float: left;
+    font-weight: 700;
+    width: 85px;
+}
+
+#problem-statistics dd {
+    float: right;
+    text-align: right;
+    width: 40px;
+}
+
+#answers-list li.item,#information-list li,#news-list li.item {
+    border: 1px solid #BBB;
+    border-radius: 5px;
+    margin: 0 0 30px;
+    overflow: hidden;
+}
+
+#answers-list h3,#information-list h3,#news-list h3 {
+    background: #f3f3f3;
+    border-bottom: #BBB solid 1px;
+    font-weight: 700;
+    padding: 7px 10px;
+}
+
+#news-list li div {
+    padding: 10px;
+    line-height: 20px;
+}
+
+#news-list strong {
+    font-weight: 700;
+}
+
+#news-list hr {
+    background: #bbb;
+    border: 0;
+    height: 1px;
+}
+
+#answers-list div,#information-list div {
+    padding: 5px 0;
+}
+
+#answers-list ul {
+    list-style-type: square;
+    padding: 5px 0 5px 25px;
+}
+
+#answers-list .item-text,#information-list .item-text {
+    line-height: 20px;
+    padding: 10px;
+}
+
+#information-list dl {
+    line-height: 20px;
+    margin: 10px;
+}
+
+#information-list dt {
+    font-weight: 700;
+}
+
+#information-list dd {
+    margin: 0 0 10px;
+}
+
+.filter-box {
+    margin: 0 0 30px;
+    height: 96px;
+    width: 698px;
+}
+
+.filter-box form {
+    padding: 15px;
+}
+
+#filterProblem {
+    float: left;
+    width: 100px;
+}
+
+#filterAnswer {
+    float: left;
+    margin: 0 15px;
+    width: 280px;
+}
+
+#filterLanguage {
+    float: left;
+    margin: 0 15px 0 0;
+    width: 160px;
+}
+
+.search {
+    height: 460px;
+    position: relative;
+    width: 100%;
+}
+
+#RunTerms {
+    float: left;
+    width: 390px;
+}
+
+#RunType {
+    float: left;
+    margin: 0 15px;
+    width: 160px;
+}
+
+#groups li {
+    border: 1px solid #BBB;
+    border-radius: 5px;
+    float: left;
+    height: 130px;
+    overflow: hidden;
+    position: relative;
+    width: 333px;
+}
+
+#groups h3 {
+    background: #f3f3f3;
+    border-bottom: #BBB solid 1px;
+    font-family: UbuntuCondensed;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: 6px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#groups .odd {
+    float: left;
+    margin: 0 25px 30px 0;
+}
+
+#groups .even {
+    float: right;
+    margin: 0 0 30px;
+}
+
+#groups dl {
+    line-height: 20px;
+    padding: 20px;
+}
+
+#groups dt {
+    float: left;
+    font-weight: 700;
+    width: 70px;
+}
+
+#groups a {
+    border-radius: 3px;
+    bottom: 20px;
+    color: #FFF;
+    cursor: pointer;
+    font-family: BryantRegular;
+    margin: 0;
+    padding: 7px 15px;
+    position: absolute;
+    right: 20px;
+    text-transform: uppercase;
+}
+
+#groups a.open {
+    background: #f39c12;
+    border: 1px solid #e67e22;
+    border-bottom: #e67e22 solid 3px;
+}
+
+#groups a.join {
+    background: #adce07;
+    border: 1px solid #8fa813;
+    border-bottom: #8fa813 solid 3px;
+}
+
+#hw-information {
+    margin: 0 0 30px;
+}
+
+#hw-information dl {
+    line-height: 20px;
+    padding: 20px;
+}
+
+#hw-information dt {
+    float: left;
+    font-weight: 700;
+    width: 90px;
+}
+
+#hw-information dd {
+    display: inline-block;
+    width: 365px;
+}
+
+#hw-information em {
+    color: #aaa;
+    font-style: italic;
+}
+
+#hw-instructions {
+    margin: 0 0 30px;
+    width: 698px;
+}
+
+#hw-instructions p {
+    line-height: 20px;
+    padding: 10px 20px;
+}
+
+#deadline {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/timer.030914.jpg) center 35px no-repeat;
+    height: 190px;
+}
+
+#deadline p {
+    background: #f3f3f3;
+    border-bottom: #BBB solid 1px;
+    border-top: #BBB solid 1px;
+    font-family: UbuntuCondensed;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 85px 0 0;
+    padding: 10px;
+    text-align: center;
+}
+
+#deadline span {
+    display: block;
+    padding: 7px;
+    text-align: center;
+}
+
+#news-list li p {
+    padding: 5px 0;
+}
+
+#news-list li ul {
+    list-style-type: square;
+    padding: 5px 0 5px 25px;
+}
+
+.news-timestamp {
+    background: #f3f3f3;
+    border-top: #BBB solid 1px;
+    display: block;
+    font-size: 10px;
+    padding: 5px 10px;
+    text-align: right;
+}
+
+#news-pagination {
+    height: 30px;
+    margin: 0 0 30px;
+}
+
+.tipsy {
+    font-size: 10px;
+    padding: 5px;
+    position: absolute;
+    z-index: 100000;
+}
+
+.tipsy-inner {
+    background-color: #000;
+    border-radius: 3px;
+    color: #FFF;
+    max-width: 200px;
+    padding: 5px 8px 4px;
+    text-align: center;
+}
+
+.tipsy-arrow {
+    border: 5px dashed #000;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.tipsy-arrow-n {
+    border-bottom-color: #000;
+}
+
+.tipsy-arrow-s {
+    border-top-color: #000;
+}
+
+.tipsy-arrow-e {
+    border-left-color: #000;
+}
+
+.tipsy-arrow-w {
+    border-right-color: #000;
+}
+
+.tipsy-n .tipsy-arrow {
+    top: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-bottom-style: solid;
+    border-top: 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.tipsy-nw .tipsy-arrow {
+    top: 0;
+    left: 10px;
+    border-bottom-style: solid;
+    border-top: 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.tipsy-ne .tipsy-arrow {
+    top: 0;
+    right: 10px;
+    border-bottom-style: solid;
+    border-top: 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.tipsy-s .tipsy-arrow {
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-top-style: solid;
+    border-bottom: 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.tipsy-sw .tipsy-arrow {
+    bottom: 0;
+    left: 10px;
+    border-top-style: solid;
+    border-bottom: 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.tipsy-se .tipsy-arrow {
+    bottom: 0;
+    right: 10px;
+    border-top-style: solid;
+    border-bottom: 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.tipsy-e .tipsy-arrow {
+    right: 0;
+    top: 50%;
+    margin-top: -5px;
+    border-left-style: solid;
+    border-right: 0;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.tipsy-w .tipsy-arrow {
+    left: 0;
+    top: 50%;
+    margin-top: -5px;
+    border-right-style: solid;
+    border-left: 0;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+#information-code {
+    margin: 0 0 30px;
+}
+
+#information-code dl {
+    line-height: 20px;
+    padding: 18px 20px;
+}
+
+#information-code dt {
+    font-weight: 700;
+    float: left;
+    width: 100px;
+}
+
+#source-code,.detail {
+    margin: 0 0 30px;
+    width: 698px;
+}
+
+#source-code .wrap {
+    margin: 20px 5px;
+}
+
+.detail p {
+    line-height: 20px;
+    padding: 18px 20px;
+    white-space: pre-wrap;
+}
+
+.code-answer-1 .syntaxhighlighter .gutter .line {
+    border-right: 3px solid #0a0!important;
+}
+
+.code-answer-2 .syntaxhighlighter .gutter .line {
+    border-right: 3px solid #e5af25!important;
+}
+
+.code-answer-2 .syntaxhighlighter .gutter .line.highlighted {
+    background-color: #e5af25!important;
+}
+
+.code-answer-3 .syntaxhighlighter .gutter .line {
+    border-right: 3px solid #0aa!important;
+}
+
+.code-answer-4 .syntaxhighlighter .gutter .line {
+    border-right: 3px solid #004fc5!important;
+}
+
+.code-answer-5 .syntaxhighlighter .gutter .line {
+    border-right: 3px solid #660!important;
+}
+
+.code-answer-6 .syntaxhighlighter .gutter .line {
+    border-right: 3px solid red!important;
+}
+
+.code-answer-7 .syntaxhighlighter .gutter .line {
+    border-right: 3px solid #992ac9!important;
+}
+
+.code-answer-7 .syntaxhighlighter .gutter .line.highlighted {
+    background-color: #992ac9!important;
+}
+
+.code-answer-8 .syntaxhighlighter .gutter .line {
+    border-right: 3px solid #7e00f4!important;
+}
+
+.code-answer-9 .syntaxhighlighter .gutter .line {
+    border-right: 3px solid #274d70!important;
+}
+
+#dropbox {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/dropbox.030914.jpg) center 35px no-repeat;
+    height: 165px;
+}
+
+#dropbox a {
+    display: block;
+    font-weight: 400!important;
+    float: left;
+    margin: 105px 10px 0;
+    text-align: center;
+    width: 133px;
+}
+
+#explorer {
+    float: left;
+    margin: 150px 200px;
+    text-align: center;
+}
+
+#explorer h1 {
+    font-family: BebasNeueRegular;
+    font-size: 28px;
+    padding: 20px;
+}
+
+#explorer p {
+    line-height: 20px;
+}
+
+#explorer a {
+    background: #4cabb9;
+    border: 1px solid #36828e;
+    border-bottom: #36828e solid 3px;
+    border-radius: 3px;
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: BryantRegular;
+    height: 15px;
+    margin: 20px;
+    padding: 7px 15px;
+    text-transform: uppercase;
+}
+
+.explorer {
+    border-left: #BBB solid 1px;
+    border-right: #BBB solid 1px;
+}
+
+.ac-terms {
+    margin: 0 0 30px;
+    width: 100%;
+}
+
+.ac-terms .text {
+    line-height: 20px;
+    padding: 5px 20px;
+}
+
+.ac-terms .text p {
+    margin: 10px 0;
+}
+
+.ac-terms .text span {
+    display: inline-block;
+    font-weight: 700;
+    width: 20px;
+}
+
+#box-information label {
+    margin: 0;
+}
+
+#box-information input[type=checkbox] {
+    margin: 0 5px 0 0;
+}
+
+.take-a-tour {
+    background: #ed5153;
+    border: 1px solid #e14043;
+    border-bottom: #e14043 solid 3px;
+    border-radius: 3px;
+    color: #FFF;
+    cursor: pointer;
+    display: block;
+    font-family: BryantRegular;
+    margin: 0 30px 30px;
+    padding: 7px 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#connect-facebook {
+    background: #8b9dc3;
+    border: 1px solid #5F729B;
+    border-bottom: #5F729B solid 3px;
+    border-radius: 3px;
+    color: #FFF;
+    cursor: pointer;
+    display: block;
+    font-family: BryantRegular;
+    margin: 0 30px 30px;
+    padding: 7px 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.fancybox-image,.fancybox-inner,.fancybox-nav,.fancybox-nav span,.fancybox-outer,.fancybox-skin,.fancybox-tmp,.fancybox-wrap,.fancybox-wrap iframe,.fancybox-wrap object {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: top;
+}
+
+.fancybox-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8020;
+}
+
+.fancybox-skin {
+    position: relative;
+    background: #fff;
+    color: #444;
+    text-shadow: none;
+    border-radius: 4px;
+}
+
+.fancybox-opened {
+    z-index: 8030;
+}
+
+.fancybox-opened .fancybox-skin {
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.fancybox-inner,.fancybox-outer {
+    position: relative;
+}
+
+.fancybox-inner {
+    overflow: hidden;
+}
+
+.fancybox-type-iframe .fancybox-inner {
+    -webkit-overflow-scrolling: touch;
+}
+
+.fancybox-error {
+    color: #444;
+    font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 15px;
+    white-space: nowrap;
+}
+
+.fancybox-iframe,.fancybox-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.fancybox-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#fancybox-loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -22px;
+    margin-left: -22px;
+    background-position: 0 -108px;
+    opacity: .8;
+    cursor: pointer;
+    z-index: 8060;
+}
+
+#fancybox-loading div {
+    width: 44px;
+    height: 44px;
+}
+
+.fancybox-close {
+    background: #FFF;
+    border: 1px solid #BBB;
+    border-radius: 3px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 8040;
+}
+
+.fancybox-nav {
+    position: absolute;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/blank.030914.gif);
+    -webkit-tap-highlight-color: transparent;
+    z-index: 8040;
+}
+
+.fancybox-prev {
+    left: 0;
+}
+
+.fancybox-next {
+    right: 0;
+}
+
+.fancybox-nav span {
+    position: absolute;
+    top: 50%;
+    width: 36px;
+    height: 34px;
+    margin-top: -18px;
+    cursor: pointer;
+    z-index: 8040;
+    visibility: hidden;
+}
+
+.fancybox-prev span {
+    left: 10px;
+    background-position: 0 -36px;
+}
+
+.fancybox-next span {
+    right: 10px;
+    background-position: 0 -72px;
+}
+
+.fancybox-nav:hover span {
+    visibility: visible;
+}
+
+.fancybox-tmp {
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+    visibility: hidden;
+    max-width: 99999px;
+    max-height: 99999px;
+    overflow: visible!important;
+}
+
+.fancybox-lock {
+    overflow: hidden!important;
+    width: auto;
+}
+
+.fancybox-lock body {
+    overflow: hidden!important;
+}
+
+.fancybox-lock-test {
+    overflow-y: hidden!important;
+}
+
+.fancybox-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: none;
+    z-index: 8010;
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/fancybox-overlay.030914.png);
+}
+
+.fancybox-overlay-fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.fancybox-lock .fancybox-overlay {
+    overflow: auto;
+    overflow-y: scroll;
+}
+
+.fancybox-title {
+    visibility: hidden;
+    font: 400 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+    position: relative;
+    text-shadow: none;
+    z-index: 8050;
+}
+
+.fancybox-opened .fancybox-title {
+    visibility: visible;
+}
+
+.fancybox-title-float-wrap {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    margin-bottom: -35px;
+    z-index: 8050;
+    text-align: center;
+}
+
+.fancybox-title-float-wrap .child {
+    display: inline-block;
+    margin-right: -100%;
+    padding: 2px 20px;
+    background: 0 0;
+    background: rgba(0,0,0,.8);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    text-shadow: 0 1px 2px #222;
+    color: #FFF;
+    font-weight: 700;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.fancybox-title-outside-wrap {
+    position: relative;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.fancybox-title-inside-wrap {
+    padding-top: 10px;
+}
+
+.fancybox-title-over-wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    padding: 10px;
+    background: #000;
+    background: rgba(0,0,0,.8);
+}
+
+#ProblemToolkitForm textarea {
+    min-height: 258px;
+}
+
+#premio-2013 {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/guia-do-estudante.110914.png) no-repeat center;
+    border: 1px solid #BBB;
+    border-radius: 5px;
+    float: left;
+    height: 49px;
+    margin: 0 0 30px;
+    padding: 15px;
+    text-align: left;
+    width: 238px;
+}
+
+#c-mode {
+    color: #ef4130!important;
+}
+
+#instructions {
+    background: #FFF;
+    border: 1px solid #BBB;
+    border-radius: 5px;
+    margin: 30px 0;
+    position: relative;
+    text-align: center;
+}
+
+#instructions h3 {
+    font-family: BebasNeueRegular;
+    font-size: 17px;
+    background: #f3f3f3;
+    border-bottom: #BBB solid 1px;
+    border-radius: 5px 5px 0 0;
+    padding: 5px;
+}
+
+#instructions div {
+    line-height: 20px;
+    margin: 15px 20px;
+    overflow: hidden;
+    text-align: left;
+}
+
+#instructions p {
+    margin: 0 0 5px;
+}
+
+#instructions strong {
+    font-weight: 700;
+}
+
+#instructions em {
+    font-style: italic;
+}
+
+.i-normal {
+    height: 550px;
+}
+
+.i-private {
+    height: 483px;
+}
+
+.mini,.mini-top {
+    margin: 0 30px 30px;
+    width: 188px;
+}
+
+.mini h4,.mini-top h4 {
+    font-family: UbuntuCondensed;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 7px 0;
+    text-align: center;
+}
+
+.mini h4 {
+    padding: 5px;
+}
+
+.mini-top h4 {
+    padding: 3px 5px 2px;
+}
+
+#contest-rank {
+    background: #fff;
+}
+
+.c-contestant {
+    border: 1px solid #bbb;
+    padding: 0 10px;
+    text-align: left;
+    width: 200px;
+}
+
+.c-contestant em {
+    color: #999;
+    font-size: 10px;
+}
+
+.c-box,.c-box-h,.c-box-t {
+    padding: 0;
+    text-align: center;
+    width: 40px;
+}
+
+.c-box,.c-box-t {
+    border: 1px solid #bbb;
+    vertical-align: bottom;
+}
+
+.c-box p,.c-box-t p {
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 700;
+    margin: 7px 7px 0;
+    padding: 3px;
+}
+
+.c-box-t p {
+    background: #bbb;
+    border-bottom: #7f8c8d solid 3px;
+}
+
+.c-yes {
+    background: #88C425;
+    border-bottom: #519548 solid 3px;
+}
+
+.c-no {
+    background: #F24E4E;
+    border-bottom: #D31900 solid 3px;
+}
+
+.c-box span,.c-box-t span {
+    display: block;
+    font-size: 10px;
+    margin: 3px 5px;
+    padding: 2px;
+}
+
+.c-box-h {
+    border-bottom: #bbb solid 1px;
+}
+
+#offline {
+    background: #fff;
+    border-bottom: #bbb solid 3px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 7px;
+    text-align: center;
+}
+
+.vote {
+    background: #e1f097;
+    border: 1px solid #90ac03;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 1px 5px;
+}
+
+.new-flag {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/new-flag.030914.png) no-repeat center;
+    height: 67px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 45px;
+}
+
+.rank-down,.rank-up {
+    font-weight: 700;
+}
+
+.rank-up {
+    color: #0A0;
+}
+
+.rank-down {
+    color: #ef4130;
+}
+
+.flag-size {
+    width: 20px;
+}
+
+.flag {
+    background: url(https://urionlinejudge.r.worldssl.net/judge/img/3.1/flags.030914.png) no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+.AFG {
+    background-position: 0 -21px;
+}
+
+.ALA {
+    background-position: 0 -42px;
+}
+
+.ALB {
+    background-position: 0 -63px;
+}
+
+.DZA {
+    background-position: 0 -84px;
+}
+
+.ASM {
+    background-position: 0 -105px;
+}
+
+.AND {
+    background-position: 0 -126px;
+}
+
+.AGO {
+    background-position: 0 -147px;
+}
+
+.AIA {
+    background-position: 0 -168px;
+}
+
+.ATA {
+    background-position: 0 -189px;
+}
+
+.ATG {
+    background-position: 0 -210px;
+}
+
+.ARG {
+    background-position: 0 -231px;
+}
+
+.ARM {
+    background-position: 0 -252px;
+}
+
+.ABW {
+    background-position: 0 -273px;
+}
+
+.AUS {
+    background-position: 0 -294px;
+}
+
+.AUT {
+    background-position: 0 -315px;
+}
+
+.AZE {
+    background-position: 0 -336px;
+}
+
+.BHS {
+    background-position: 0 -357px;
+}
+
+.BHR {
+    background-position: 0 -378px;
+}
+
+.BGD {
+    background-position: 0 -399px;
+}
+
+.BRB {
+    background-position: 0 -420px;
+}
+
+.BLR {
+    background-position: 0 -462px;
+}
+
+.BEL {
+    background-position: 0 -483px;
+}
+
+.BLZ {
+    background-position: 0 -504px;
+}
+
+.BEN {
+    background-position: 0 -525px;
+}
+
+.BMU {
+    background-position: 0 -546px;
+}
+
+.BTN {
+    background-position: 0 -567px;
+}
+
+.BOL {
+    background-position: 0 -588px;
+}
+
+.BIH {
+    background-position: 0 -609px;
+}
+
+.BWA {
+    background-position: 0 -630px;
+}
+
+.BRA {
+    background-position: 0 -651px;
+}
+
+.VGB {
+    background-position: 0 -693px;
+}
+
+.BRN {
+    background-position: 0 -714px;
+}
+
+.BGR {
+    background-position: 0 -735px;
+}
+
+.BFA {
+    background-position: 0 -756px;
+}
+
+.BDI {
+    background-position: 0 -777px;
+}
+
+.KHM {
+    background-position: 0 -798px;
+}
+
+.CMR {
+    background-position: 0 -819px;
+}
+
+.CAN {
+    background-position: 0 -840px;
+}
+
+.CPV {
+    background-position: 0 -882px;
+}
+
+.CYM {
+    background-position: 0 -903px;
+}
+
+.CAF {
+    background-position: 0 -924px;
+}
+
+.TCD {
+    background-position: 0 -945px;
+}
+
+.CHL {
+    background-position: 0 -966px;
+}
+
+.CHN {
+    background-position: 0 -987px;
+}
+
+.CXR {
+    background-position: 0 -1008px;
+}
+
+.CCK {
+    background-position: 0 -1029px;
+}
+
+.COL {
+    background-position: 0 -1050px;
+}
+
+.COM {
+    background-position: 0 -1092px;
+}
+
+.COK {
+    background-position: 0 -1113px;
+}
+
+.CRI {
+    background-position: 0 -1134px;
+}
+
+.CIV {
+    background-position: 0 -1155px;
+}
+
+.HRV {
+    background-position: 0 -1176px;
+}
+
+.CUB {
+    background-position: 0 -1197px;
+}
+
+.CYP {
+    background-position: 0 -1239px;
+}
+
+.CZE {
+    background-position: 0 -1260px;
+}
+
+.COD {
+    background-position: 0 -1281px;
+}
+
+.DNK {
+    background-position: 0 -1302px;
+}
+
+.DJI {
+    background-position: 0 -1323px;
+}
+
+.DMA {
+    background-position: 0 -1344px;
+}
+
+.DOM {
+    background-position: 0 -1365px;
+}
+
+.TLS {
+    background-position: 0 -1386px;
+}
+
+.ECU {
+    background-position: 0 -1407px;
+}
+
+.EGY {
+    background-position: 0 -1428px;
+}
+
+.SLV {
+    background-position: 0 -1449px;
+}
+
+.GNQ {
+    background-position: 0 -1491px;
+}
+
+.ERI {
+    background-position: 0 -1512px;
+}
+
+.EST {
+    background-position: 0 -1533px;
+}
+
+.ETH {
+    background-position: 0 -1554px;
+}
+
+.FLK {
+    background-position: 0 -1596px;
+}
+
+.FRO {
+    background-position: 0 -1617px;
+}
+
+.FJI {
+    background-position: 0 -1638px;
+}
+
+.FIN {
+    background-position: 0 -1659px;
+}
+
+.FRA {
+    background-position: 0 -1680px;
+}
+
+.PYF {
+    background-position: 0 -1701px;
+}
+
+.ATF {
+    background-position: 0 -1722px;
+}
+
+.GAB {
+    background-position: 0 -1743px;
+}
+
+.GMB {
+    background-position: 0 -1764px;
+}
+
+.GEO {
+    background-position: 0 -1785px;
+}
+
+.DEU {
+    background-position: 0 -1806px;
+}
+
+.GHA {
+    background-position: 0 -1827px;
+}
+
+.GIB {
+    background-position: 0 -1848px;
+}
+
+.GRC {
+    background-position: 0 -1890px;
+}
+
+.GRL {
+    background-position: 0 -1911px;
+}
+
+.GRD {
+    background-position: 0 -1932px;
+}
+
+.GUM {
+    background-position: 0 -1953px;
+}
+
+.GTM {
+    background-position: 0 -1974px;
+}
+
+.GNB {
+    background-position: 0 -2016px;
+}
+
+.GIN {
+    background-position: 0 -2037px;
+}
+
+.GUY {
+    background-position: 0 -2058px;
+}
+
+.HTI {
+    background-position: 0 -2079px;
+}
+
+.HND {
+    background-position: 0 -2100px;
+}
+
+.HKG {
+    background-position: 0 -2121px;
+}
+
+.HUN {
+    background-position: 0 -2142px;
+}
+
+.ISL {
+    background-position: 0 -2163px;
+}
+
+.IND {
+    background-position: 0 -2184px;
+}
+
+.IDN {
+    background-position: 0 -2205px;
+}
+
+.IRN {
+    background-position: 0 -2226px;
+}
+
+.IRQ {
+    background-position: 0 -2247px;
+}
+
+.IRL {
+    background-position: 0 -2268px;
+}
+
+.ISR {
+    background-position: 0 -2310px;
+}
+
+.ITA {
+    background-position: 0 -2331px;
+}
+
+.JAM {
+    background-position: 0 -2352px;
+}
+
+.JPN {
+    background-position: 0 -2373px;
+}
+
+.JOR {
+    background-position: 0 -2415px;
+}
+
+.KAZ {
+    background-position: 0 -2436px;
+}
+
+.KEN {
+    background-position: 0 -2457px;
+}
+
+.KIR {
+    background-position: 0 -2478px;
+}
+
+.KWT {
+    background-position: 0 -2520px;
+}
+
+.KGZ {
+    background-position: 0 -2541px;
+}
+
+.LAO {
+    background-position: 0 -2562px;
+}
+
+.LVA {
+    background-position: 0 -2583px;
+}
+
+.LBN {
+    background-position: 0 -2604px;
+}
+
+.LSO {
+    background-position: 0 -2625px;
+}
+
+.LBR {
+    background-position: 0 -2646px;
+}
+
+.LBY {
+    background-position: 0 -2667px;
+}
+
+.LIE {
+    background-position: 0 -2688px;
+}
+
+.LTU {
+    background-position: 0 -2709px;
+}
+
+.LUX {
+    background-position: 0 -2730px;
+}
+
+.MAC {
+    background-position: 0 -2751px;
+}
+
+.MKD {
+    background-position: 0 -2772px;
+}
+
+.MDG {
+    background-position: 0 -2793px;
+}
+
+.MWI {
+    background-position: 0 -2814px;
+}
+
+.MYS {
+    background-position: 0 -2835px;
+}
+
+.MDV {
+    background-position: 0 -2856px;
+}
+
+.MLI {
+    background-position: 0 -2877px;
+}
+
+.MLT {
+    background-position: 0 -2898px;
+}
+
+.MHL {
+    background-position: 0 -2940px;
+}
+
+.MTQ {
+    background-position: 0 -2961px;
+}
+
+.MRT {
+    background-position: 0 -2982px;
+}
+
+.MUS {
+    background-position: 0 -3003px;
+}
+
+.MYT {
+    background-position: 0 -3024px;
+}
+
+.MEX {
+    background-position: 0 -3045px;
+}
+
+.FSM {
+    background-position: 0 -3066px;
+}
+
+.MDA {
+    background-position: 0 -3087px;
+}
+
+.MCO {
+    background-position: 0 -3108px;
+}
+
+.MNG {
+    background-position: 0 -3129px;
+}
+
+.MSR {
+    background-position: 0 -3171px;
+}
+
+.MAR {
+    background-position: 0 -3192px;
+}
+
+.MOZ {
+    background-position: 0 -3213px;
+}
+
+.MMR {
+    background-position: 0 -3234px;
+}
+
+.NAM {
+    background-position: 0 -3297px;
+}
+
+.NRU {
+    background-position: 0 -3318px;
+}
+
+.NPL {
+    background-position: 0 -3339px;
+}
+
+.ANT {
+    background-position: 0 -3360px;
+}
+
+.NLD {
+    background-position: 0 -3381px;
+}
+
+.NCL {
+    background-position: 0 -3402px;
+}
+
+.NZL {
+    background-position: 0 -3423px;
+}
+
+.NIC {
+    background-position: 0 -3444px;
+}
+
+.NER {
+    background-position: 0 -3465px;
+}
+
+.NGA {
+    background-position: 0 -3486px;
+}
+
+.NIU {
+    background-position: 0 -3507px;
+}
+
+.NFK {
+    background-position: 0 -3528px;
+}
+
+.PRK {
+    background-position: 0 -3549px;
+}
+
+.NOR {
+    background-position: 0 -3612px;
+}
+
+.OMN {
+    background-position: 0 -3654px;
+}
+
+.PAK {
+    background-position: 0 -3675px;
+}
+
+.PLW {
+    background-position: 0 -3696px;
+}
+
+.PSE {
+    background-position: 0 -3717px;
+}
+
+.PAN {
+    background-position: 0 -3738px;
+}
+
+.PNG {
+    background-position: 0 -3759px;
+}
+
+.PRY {
+    background-position: 0 -3780px;
+}
+
+.PER {
+    background-position: 0 -3801px;
+}
+
+.PHL {
+    background-position: 0 -3822px;
+}
+
+.PCN {
+    background-position: 0 -3843px;
+}
+
+.POL {
+    background-position: 0 -3864px;
+}
+
+.PRT {
+    background-position: 0 -3885px;
+}
+
+.PRI {
+    background-position: 0 -3906px;
+}
+
+.QAT {
+    background-position: 0 -3927px;
+}
+
+.COG {
+    background-position: 0 -3969px;
+}
+
+.ROU {
+    background-position: 0 -3990px;
+}
+
+.RUS {
+    background-position: 0 -4011px;
+}
+
+.RWA {
+    background-position: 0 -4032px;
+}
+
+.SHN {
+    background-position: 0 -4074px;
+}
+
+.KNA {
+    background-position: 0 -4095px;
+}
+
+.LCA {
+    background-position: 0 -4116px;
+}
+
+.VCT {
+    background-position: 0 -4158px;
+}
+
+.WSM {
+    background-position: 0 -4179px;
+}
+
+.SMR {
+    background-position: 0 -4200px;
+}
+
+.STP {
+    background-position: 0 -4221px;
+}
+
+.SAU {
+    background-position: 0 -4242px;
+}
+
+.SEN {
+    background-position: 0 -4284px;
+}
+
+.SCG {
+    background-position: 0 -4305px;
+}
+
+.SYC {
+    background-position: 0 -4326px;
+}
+
+.SLE {
+    background-position: 0 -4347px;
+}
+
+.SGP {
+    background-position: 0 -4368px;
+}
+
+.SVK {
+    background-position: 0 -4389px;
+}
+
+.SVN {
+    background-position: 0 -4410px;
+}
+
+.SLB {
+    background-position: 0 -4431px;
+}
+
+.SOM {
+    background-position: 0 -4452px;
+}
+
+.ZAF {
+    background-position: 0 -4494px;
+}
+
+.SGS {
+    background-position: 0 -4515px;
+}
+
+.KOR {
+    background-position: 0 -4536px;
+}
+
+.ESP {
+    background-position: 0 -4599px;
+}
+
+.LKA {
+    background-position: 0 -4620px;
+}
+
+.SDN {
+    background-position: 0 -4641px;
+}
+
+.SUR {
+    background-position: 0 -4662px;
+}
+
+.SWZ {
+    background-position: 0 -4683px;
+}
+
+.SWE {
+    background-position: 0 -4704px;
+}
+
+.CHE {
+    background-position: 0 -4725px;
+}
+
+.SYR {
+    background-position: 0 -4746px;
+}
+
+.TWN {
+    background-position: 0 -4767px;
+}
+
+.TJK {
+    background-position: 0 -4788px;
+}
+
+.TZA {
+    background-position: 0 -4809px;
+}
+
+.THA {
+    background-position: 0 -4830px;
+}
+
+.TGO {
+    background-position: 0 -4851px;
+}
+
+.TKL {
+    background-position: 0 -4872px;
+}
+
+.TON {
+    background-position: 0 -4893px;
+}
+
+.TTO {
+    background-position: 0 -4914px;
+}
+
+.TUN {
+    background-position: 0 -4935px;
+}
+
+.TUR {
+    background-position: 0 -4956px;
+}
+
+.TKM {
+    background-position: 0 -4977px;
+}
+
+.TCA {
+    background-position: 0 -4998px;
+}
+
+.TUV {
+    background-position: 0 -5019px;
+}
+
+.VIR {
+    background-position: 0 -5040px;
+}
+
+.UGA {
+    background-position: 0 -5061px;
+}
+
+.UKR {
+    background-position: 0 -5082px;
+}
+
+.ARE {
+    background-position: 0 -5103px;
+}
+
+.GBR {
+    background-position: 0 -5124px;
+}
+
+.USA {
+    background-position: 0 -5166px;
+}
+
+.URY {
+    background-position: 0 -5208px;
+}
+
+.UZB {
+    background-position: 0 -5229px;
+}
+
+.VUT {
+    background-position: 0 -5250px;
+}
+
+.VAT {
+    background-position: 0 -5271px;
+}
+
+.VEN {
+    background-position: 0 -5292px;
+}
+
+.VNM {
+    background-position: 0 -5313px;
+}
+
+.WLF {
+    background-position: 0 -5355px;
+}
+
+.ESH {
+    background-position: 0 -5376px;
+}
+
+.YEM {
+    background-position: 0 -5397px;
+}
+
+.ZMB {
+    background-position: 0 -5418px;
+}
+
+.ZWE {
+    background-position: 0 -5439px;
+}
+
+.BVT,.GLP,.GUF,.HMD,.REU,.SJM,.SPM,.UMI {
+    background-position: 0 -5187px;
+}
+
+.g-row {
+    height: 110px;
+}
+
+.g-box,.g-box-today {
+    border: 1px solid #bbb;
+    border-left: 0;
+    padding: 22px 0 0;
+    position: relative;
+    vertical-align: top;
+    width: 12.28%;
+}
+
+.g-box-today {
+    background: #FFF6A1;
+}
+
+.g-day {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.g-event {
+    background: #f3f3f3;
+    border-bottom: #bbb solid 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 3px 0;
+    text-align: center;
+    margin: 2px 7px;
+    width: 85%;
+}
+
+.g-event a {
+    color: #555;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.g-event strong {
+    color: #7f8c8d;
+}
+
+.g-plus {
+    bottom: 0;
+    font-size: 10px;
+    left: 0;
+    padding: 3px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.tk-download-d,.tk-download-e {
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    font-family: BryantRegular;
+    margin: 0 0 0 15px;
+    padding: 9px 15px;
+    text-transform: uppercase;
+}
+
+.tk-download-e {
+    background: #ed5153;
+    border: 1px solid #e14043;
+    border-bottom: #e14043 solid 3px;
+    color: #FFF;
+}
+
+.tk-download-d {
+    background: #f3f3f3;
+    border: 1px solid #BBB;
+    border-bottom: #BBB solid 3px;
+    color: #454545;
+}
+
+#editor {
+    margin: 5px 0 30px;
+    height: 595px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+}
+
+.hm-box-progress {
+    border: 1px solid #BBB;
+    border-radius: 3px;
+    margin: 20px;
+}
+
+.hm-progress {
+    border-radius: 3px;
+    background: #adce07;
+    height: 10px;
+    width: 0;
+}
